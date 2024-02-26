@@ -29,4 +29,4 @@ Thymeleaf stands out as a server-side template engine for Java, not just for its
 In the realm of Java web development architecture and practices, Thymeleaf has emerged as a cornerstone library. Its adoption is prevalent, making it a fundamental component for crafting dynamic and visually appealing web applications within the Java ecosystem. Thymeleaf's prominence in Java web development reflects its effectiveness and widespread acceptance within the community.
 
 
-# [**Next lesson**: *How to configure thymeleaf in your project.*]()
+# [**Next lesson**: *How to set up thymeleaf in your project.*](set-up-thymeleaf-in-project.md)
