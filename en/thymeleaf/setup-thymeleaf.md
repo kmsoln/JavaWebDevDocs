@@ -35,3 +35,5 @@ implementation 'org.thymeleaf:thymeleaf-spring6'
 ### Note on Version Compatibility:
 
 Ensure version compatibility between Thymeleaf and Spring Boot. Align the version numbers in the dependencies (`spring-boot-starter-thymeleaf` and `thymeleaf-spring6`) with your Spring Boot version. Refer to official documentation for both Spring Boot and Thymeleaf to select the appropriate versions for a seamless integration.
+
+# [**Next lesson**: *How to configure thymeleaf in your project.*](setup-thymeleaf.md)
