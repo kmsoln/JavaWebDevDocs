@@ -6,13 +6,14 @@
 
 Основные конструкции Thymeleaf:
 - `th:text` - устанавливает текстовое содержимое тега [Текст в Thymeleaf][thymeleaf-text]
-- Переменные - вставка переменных в текст [Переменные в Thymeleaf][thymeleaf-variables]
+-  Переменные - вставка переменных в текст [Переменные в Thymeleaf][thymeleaf-variables]
 - `th:if` - условный оператор [Условный оператор в Thymeleaf][thymeleaf-if]
 - `th:each` - цикл [Циклы в Thymeleaf][thymeleaf-each]
 - `th:block` - создание блоков [Блоки в Thymeleaf][thymeleaf-code-blocks]
 -  Ссылки и URL [Ссылки и URL в Thymeleaf][thymeleaf-links]
-- Стандартные выражения Thymeleaf [Стандартные выражения Thymeleaf][thymeleaf-standard-expressions]
-- Сообщение из файла локализации [Сообщения из файла локализации в Thymeleaf][thymeleaf-messages]
+-  Стандартные выражения Thymeleaf [Стандартные выражения Thymeleaf][thymeleaf-standard-expressions]
+-  Сообщение из файла локализации [Сообщения из файла локализации в Thymeleaf][thymeleaf-messages]
+- Формы - обработка форм [Формы в Thymeleaf][thymeleaf-forms]
 
 [thymeleaf-text]: syntax-text
 [thymeleaf-variables]: syntax-variables
@@ -22,3 +23,4 @@
 [thymeleaf-links]: syntax-links
 [thymeleaf-standard-expressions]: syntax-simple-expressions
 [thymeleaf-messages]: syntax-messages
+[thymeleaf-forms]: syntax-forms
