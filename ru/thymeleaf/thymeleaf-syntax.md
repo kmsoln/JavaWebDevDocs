@@ -9,8 +9,10 @@
 - Переменные - вставка переменных в текст [Переменные в Thymeleaf][thymeleaf-variables]
 - `th:if` - условный оператор [Условный оператор в Thymeleaf][thymeleaf-if]
 - `th:each` - цикл [Цикл в Thymeleaf][thymeleaf-each]
+- `th:block` - создание блоков [Блоки в Thymeleaf][thymeleaf-code-blocks]
 
 [thymeleaf-text]: syntax-text
 [thymeleaf-variables]: syntax-variables
 [thymeleaf-if]: syntax-conditional-themeleaf.md
 [thymeleaf-each]: syntax-iteration
+[thymeleaf-code-blocks]: thymeleaf-code-blocks
