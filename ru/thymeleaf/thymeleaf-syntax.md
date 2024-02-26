@@ -11,11 +11,12 @@
 -  Переменные - вставка переменных в текст [Переменные в Thymeleaf][thymeleaf-variables]
 - `th:if` - условный оператор [Условный оператор в Thymeleaf][thymeleaf-if]
 - `th:each` - цикл [Циклы в Thymeleaf][thymeleaf-each]
-- Template Layout [Блоки в Thymeleaf][thymeleaf-code-blocks]
+-  Template Layout [Блоки в Thymeleaf][thymeleaf-code-blocks]
 -  Ссылки и URL [Ссылки и URL в Thymeleaf][thymeleaf-links]
 -  Стандартные выражения Thymeleaf [Стандартные выражения Thymeleaf][thymeleaf-standard-expressions]
 -  Сообщение из файла локализации [Сообщения из файла локализации в Thymeleaf][thymeleaf-messages]
-- Формы - обработка форм [Формы в Thymeleaf][thymeleaf-forms]
+-  Формы - обработка форм [Формы в Thymeleaf][thymeleaf-forms]
+-  Массивы и списки [Массивы и списки в Thymeleaf][thymeleaf-arrays]
 
 [thymeleaf-text]: syntax-text
 [thymeleaf-variables]: syntax-variables
@@ -26,3 +27,6 @@
 [thymeleaf-standard-expressions]: syntax-simple-expressions
 [thymeleaf-messages]: syntax-messages
 [thymeleaf-forms]: syntax-forms
+[thymeleaf-arrays]: syntax-arrays
+
+# [**Следующий урок**: *Thymeleaf и Spring*](thymeleaf-spring.md)
