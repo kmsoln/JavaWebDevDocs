@@ -1,10 +1,12 @@
 # Getting Started with Thymeleaf
 
-Thymeleaf is a powerful tool that simplifies the process of creating dynamic and elegant web pages. Whether you're a web designer or a developer, Thymeleaf makes it easy to integrate dynamic content seamlessly into your HTML templates. In this guide, we'll take you through the basics of Thymeleaf and get you started on harnessing its capabilities.
+Thymeleaf is a powerful tool that simplifies the process of creating **HTML** web pages. Whether you're a developer, Thymeleaf makes it easy to integrate the server-side ( **Backend**) with the client side ( **Frontend** ) to create at the end a dynamic content seamlessly into your project. In this guide, we'll take you through the basics of Thymeleaf and get you started on harnessing its capabilities.
 
 ## What is Thymeleaf?
 
-Thymeleaf is a Java-based template engine designed for seamlessly integrating dynamic content into web applications. Its distinctive approach centers around creating templates that feel natural, enhancing readability and understanding. Thymeleaf supports various document types, including HTML, XML, JavaScript, CSS, and plain text.
+Thymeleaf is a Java-based template engine specifically crafted for seamlessly integrating the entire project in one place. It plays a pivotal role in realizing the concept of **[Model-Controller-View (MVC)][mvc]** architecture within web applications. Thymeleaf excels in creating templates that feel natural, fostering enhanced readability and comprehension. By embracing this library, developers can harness powerful tools to streamline the integration of dynamic content, ultimately enriching the user experience. Its versatility extends to various document types, including HTML, XML, JavaScript, CSS, and plain text, making it a comprehensive solution for cohesive web development.
+
+[mvc]: https://dotnet.microsoft.com/learn/aspnet/what-is-aspnet-mvc
 
 ### [Exploring Thymeleaf Basics](#thymeleaf-basics)
 
