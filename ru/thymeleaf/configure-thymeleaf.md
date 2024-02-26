@@ -4,6 +4,8 @@
 в проекте.
 Для этого перейдем в ваш класс конфигуратор, где находятся все ваши [бины][beans], и добавим несколько новых бинов.
 
+[beans]: beans.md
+
 ```java
     @Bean
     public ClassLoaderTemplateResolver templateResolver() {
@@ -42,5 +44,3 @@
   будет использовать наш `templateEngine` для обработки шаблонов.
 
 # [**Следующий урок**: *Текст в Thymeleaf*](thymeleaf-text.md)
-
-[beans]: beans.md
