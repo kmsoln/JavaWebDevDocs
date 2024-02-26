@@ -17,14 +17,6 @@ dependencies {
 }
 ```
 
-Если вы используете Gradle Kotlin, добавьте следующую строку в раздел `dependencies` файла `build.gradle.kts`:
-
-```kotlin
-dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-thymeleaf")
-}
-```
-
 После добавления зависимости, Thymeleaf будет доступен в вашем проекте. Теперь вы можете использовать его для создания динамических веб-страниц.
 
 # [**Следующий урок**: *Синтаксис выражений Thymeleaf]()
