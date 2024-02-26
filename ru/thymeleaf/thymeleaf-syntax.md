@@ -8,11 +8,17 @@
 - `th:text` - устанавливает текстовое содержимое тега [Текст в Thymeleaf][thymeleaf-text]
 - Переменные - вставка переменных в текст [Переменные в Thymeleaf][thymeleaf-variables]
 - `th:if` - условный оператор [Условный оператор в Thymeleaf][thymeleaf-if]
-- `th:each` - цикл [Цикл в Thymeleaf][thymeleaf-each]
+- `th:each` - цикл [Циклы в Thymeleaf][thymeleaf-each]
 - `th:block` - создание блоков [Блоки в Thymeleaf][thymeleaf-code-blocks]
+-  Ссылки и URL [Ссылки и URL в Thymeleaf][thymeleaf-links]
+- Стандартные выражения Thymeleaf [Стандартные выражения Thymeleaf][thymeleaf-standard-expressions]
+- Сообщение из файла локализации [Сообщения из файла локализации в Thymeleaf][thymeleaf-messages]
 
 [thymeleaf-text]: syntax-text
 [thymeleaf-variables]: syntax-variables
 [thymeleaf-if]: syntax-conditional-themeleaf.md
 [thymeleaf-each]: syntax-iteration
 [thymeleaf-code-blocks]: thymeleaf-code-blocks
+[thymeleaf-links]: syntax-links
+[thymeleaf-standard-expressions]: syntax-simple-expressions
+[thymeleaf-messages]: syntax-messages

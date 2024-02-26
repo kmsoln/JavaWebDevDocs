@@ -28,11 +28,9 @@
 <head>
 </head>
 <body>
-    <div th:with="name='John'" th:block>
-        <p>Привет, <span th:text="${name}"></span>!</p>
+    <div th:block th:with="name='John'">
+        <p th:text="${name}"></p>
     </div>
-</body>
-</html>
 ```
 
 В этом примере мы создали переменную `name` со значением "John" и использовали ее внутри блока.
