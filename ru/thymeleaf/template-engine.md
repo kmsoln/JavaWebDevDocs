@@ -41,6 +41,6 @@
 - `ThymeleafViewResolver` - это класс, который позволяет нам настроить наш шаблонизатор для работы с Spring. Мы указали, что он
   будет использовать наш `templateEngine` для обработки шаблонов.
 
-# [**Следующий урок**: *Синтаксис Thymeleaf*](template-engine.md)
+# [**Следующий урок**: *Текст в Thymeleaf*](thymeleaf-text.md)
 
 [beans]: beans.md
