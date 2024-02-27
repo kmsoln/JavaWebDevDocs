@@ -17,6 +17,7 @@
 -  Стандартные выражения Thymeleaf [Стандартные выражения Thymeleaf][thymeleaf-standard-expressions]
 -  Сообщение из файла локализации [Сообщения из файла локализации в Thymeleaf][thymeleaf-messages]
 -  Формы - обработка форм [Формы в Thymeleaf][thymeleaf-forms]
+- Форматирование данных [Форматирование][thymeleaf-formatting]
 
 [thymeleaf-text]: syntax-text.md
 [thymeleaf-variables]: syntax-variables.md
@@ -28,5 +29,6 @@
 [thymeleaf-standard-expressions]: syntax-simple-expressions.md
 [thymeleaf-messages]: syntax-messages.md
 [thymeleaf-forms]: syntax-forms.md
+[thymeleaf-formatting]: syntax-formatting.md
 
 # [**Следующий урок**: *Thymeleaf и Spring*](thymeleaf-spring.md)
