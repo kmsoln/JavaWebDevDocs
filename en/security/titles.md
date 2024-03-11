@@ -1,17 +1,17 @@
-- What security ?
-- Ways of security ( what ways we can use to secure our app )
-- Authentication
-    - Authentication by username/password
-    - jwt
-    - cookie
-    - etc
-- Authorization
-    - Role
-    - Authorities
-    - Csrf
-    - etc
-- Spring Security
-- Configuring Spring Security
-- How to implement security there
-- Additional ways to implement security 
-- security in client
+- **What is security?**
+- **Ways of ensuring security (what methods can we use to protect our application)**
+- **Authentication**
+  - Authentication by username/password
+  - JWT
+  - Cookie
+  - etc.
+- **Authorization**
+  - Role
+  - Authorities
+  - CSRF
+  - etc.
+- **Spring Security**
+- **Configuring Spring Security**
+- **How to implement security there**
+- **Additional ways to implement security**
+- **Security on the client**
