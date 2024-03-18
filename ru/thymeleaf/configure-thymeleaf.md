@@ -5,7 +5,7 @@
 Для этого перейдем в ваш класс конфигуратор, где находятся все ваши [бины][beans], и добавим несколько новых бинов.
 
 ```java
-    @Bean
+    @Bean  
     public ClassLoaderTemplateResolver templateResolver() {
         ClassLoaderTemplateResolver templateResolver = new ClassLoaderTemplateResolver();
         
