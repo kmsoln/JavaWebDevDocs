@@ -14,11 +14,6 @@
    - [Безопасное соединение](secure/secure-connection.md)
    - [Управление сеансом](secure/session-managmet.md)
 
-4. **Управление токенами:**
-   - [Токен Bearer](token/bearer.md)
-   - [Токен Cookie](token/cookie.md)
-   - [JWT (JSON Web Token)](token/jwt.md)
-
 5. **Spring Security:**
    - [Что такое Spring Security?](what-is-spring-security.md)
    - [Настройка Spring Security](configure-spring-security.md)
