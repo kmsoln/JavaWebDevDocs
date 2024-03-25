@@ -1,6 +1,6 @@
 1. **Аутентификация:**
-   - [Аутентификация по имени пользователя и паролю](authentication/username-password.md)
-   - [OAuth](oauth/oauth.md)
+   - [Аутентификация по имени пользователя и паролю](authentication/username-password/username-password.md)
+   - [OAuth](authentication/oauth/oauth.md)
    - [OIDC (OpenID Connect)](password_auth/odic.md)   
 
 2. **Авторизация:**

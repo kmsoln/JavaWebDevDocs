@@ -26,7 +26,7 @@ public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 
 Примерно вот как это выглядит в интерфейсе авторизации Google:
 
-![Google OAuth](../resources/google-auth.png)
+![Google OAuth](../../resources/google-auth.png)
 
 Но на данный момент мы лишь устанавливаем тип доступа, но не запрашиваем никаких конкретных данных или разрешений. Для того чтобы запросить разрешения, нам необходимо указать их тут же в `scopes`. Например, добавим никнейм и почту пользователя:
 
