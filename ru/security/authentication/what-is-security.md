@@ -1,56 +1,57 @@
-# Introduction to Web Security
+# Введение в Веб-Безопасность
 
-## Why Web Security Matters
+## Почему Веб-Безопасность Важна?
 
-Imagine you're the architect of a bustling city, responsible for designing not just its aesthetic appeal but also its resilience against potential threats. In the digital landscape, web developers are akin to these architects, crafting intricate web applications that serve as the backbone of our online experiences.
+Представьте, что вы архитектор шумного города, ответственный за создание не только его эстетического облика, но и его устойчивости к потенциальным угрозам. В цифровом мире веб-разработчики подобны этим архитекторам, создающим сложные веб-приложения, которые служат основой наших онлайн-опытов.
 
-Just as a city needs protection from external risks, web applications must be shielded from the myriad of online threats that lurk in the virtual realm. This is where the mission of web security comes into play.
+Так же, как городу нужна защита от внешних рисков, веб-приложения должны быть защищены от множества онлайн-угроз, которые тают в виртуальной сфере. Именно здесь начинает действовать миссия веб-безопасности.
 
-### Safeguarding the Digital Realm
+### Охрана Цифрового Мира
 
-Web security is the guardian of your digital creations, ensuring the safe and reliable functioning of your web applications. As university students venturing into the realms of web development, understanding the significance of web security is akin to realizing the importance of city planning and infrastructure in the physical world.
+Веб-безопасность - это страж ваших цифровых творений, обеспечивающая безопасное и надежное функционирование ваших веб-приложений. Для студентов университета, вступающих в мир веб-разработки, понимание значения веб-безопасности подобно осознанию важности планирования и инфраструктуры города в физическом мире.
 
-### The Need for Web Security
+### Потребность в Веб-Безопасности
 
-In this interconnected web of information, your applications face potential dangers:
+В этой взаимосвязанной сети информации ваши приложения сталкиваются с потенциальными опасностями:
 
-1. **Unauthorized Access:**
-    - Malicious entities seeking entry to private areas of your application.
+1. **Неавторизованный Доступ:**
+    - Злоумышленники, стремящиеся проникнуть в закрытые зоны вашего приложения.
 
-2. **Data Breaches:**
-    - Protecting user data from falling into the wrong hands, preventing potential harm.
+2. **Утечки Данных:**
+    - Защита пользовательских данных от попадания в неправильные руки, предотвращение возможного вреда.
 
-3. **Injection Attacks:**
-    - Warding off attempts to corrupt your application's integrity through malicious code.
+3. **Атаки Внедрения:**
+    - Отражение попыток подорвать целостность вашего приложения с помощью вредоносного кода.
 
-4. **Cross-Site Request Forgery (CSRF):**
-    - Defending against actions initiated by nefarious actors rather than genuine users.
+4. **Межсайтовая Подделка Запроса (CSRF):**
+    - Защита от действий, инициированных коварными актерами, а не подлинными пользователями.
 
-5. **Denial of Service (DoS) Attacks:**
-    - Ensuring your application remains accessible to those who genuinely rely on it.
+5. **Атаки Отказа в Обслуживании (DoS):**
+    - Обеспечение доступности вашего приложения для тех, кто действительно на него полагается.
 
-### The Role of Spring Security
+### Роль Spring Security
 
-Enter [Spring Security](https://spring.io/projects/spring-security), your digital fortress. Much like an advanced security system fortifying a city, Spring Security empowers you with tools to guard against the diverse challenges posed by the digital landscape.
+Вот и [Spring Security](https://spring.io/projects/spring-security) - ваша цифровая крепость. Аналогично передовой системе безопасности, укрепляющей город, Spring Security дает вам средства для борьбы с различными вызовами цифрового мира.
 
-- **Authentication and Authorization:**
-    - Verifying the identity of users and controlling access to different parts of your application.
+- **Аутентификация и Авторизация:**
+    - Проверка личности пользователей и управление доступом к различным частям вашего приложения.
 
-- **Secure Communication:**
-    - Encrypting and safeguarding the information exchanged between users and your application.
+- **Безопасная Коммуникация:**
+    - Шифрование и защита информации, обмениваемой между пользователями и вашим приложением.
 
-- **Protection Against Common Attacks:**
-    - Acting as a shield against common vulnerabilities, ensuring the robustness of your digital creation.
+- **Защита От Общих Атак:**
+    - Действует как щит от распространенных уязвимостей, обеспечивая прочность вашего цифрового творения.
 
-- **Session Management:**
-    - Handling user sessions securely to maintain a trustworthy environment.
+- **Управление Сессиями:**
+    - Безопасное управление сеансами пользователей для поддержания доверительной среды.
 
-## Getting Started with Web Security
+## Начало Работы с Веб-Безопасностью
 
-As you embark on this journey into web security, envision yourself as the guardian of a thriving digital city. The upcoming sections will unravel the intricacies of user authentication, authorization, securing APIs, and implementing best practices using Spring Security. By journey's end, you'll not only be a proficient developer but also a vigilant custodian of digital realms.
+Когда вы отправляетесь в это путешествие в мир веб-безопасности, представьте себя стражем процветающего цифрового города. В следующих разделах мы раскроем тонкости аутентификации пользователей, авторизации, обеспечения безопасности API и реализации лучших практик с помощью Spring Security. К концу пути вы станете не только опытным разработчиком, но и бдительным хранителем цифровых царств.
 
-Prepare to dive into the world of user authentication, where identities are verified, and access is granted with utmost precision.
+Готовьтесь погрузиться в мир аутентификации пользователей, где личности проверяются, а доступ предоставляется с максимальной точностью.
+
 
 ---
 
-# [NEXT: ]()
+# [ДАЛЕЕ: Authority](..\authorization\authority.md)
