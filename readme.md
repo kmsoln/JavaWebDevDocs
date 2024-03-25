@@ -11,7 +11,7 @@
 
 ## Security
 1. **Основные концепции:**
-    - [Что такое безопасность?](/ru/security/what-is-security.md)
+    - [Что такое безопасность?](/ru/security/authentication/what-is-security.md)
 
 2. **Аутентификация:**
     - [Введение в аутентификацию](/ru/security/authentication/introduction-of-authentication.md)

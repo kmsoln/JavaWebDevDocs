@@ -11,7 +11,7 @@ Intro for the docs
 
 ## Security
 1. **Foundational Concepts:**
-    - [What is Security?](en/security/what-is-security.md)
+    - [What is Security?](ru/security/authentication/what-is-security.md)
 
 2. **Authentication:**
     - [Introduction of Authentication](en/security/authentication/introduction-of-authentication.md)

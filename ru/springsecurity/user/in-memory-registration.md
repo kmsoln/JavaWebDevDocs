@@ -95,4 +95,4 @@ public class RegistrationController {
 Теперь, если вы перейдете на страницу `/register`, вы увидите форму, которая позволит вам зарегистрировать нового пользователя.
 
 
-![Регистрация](../resources/register-form.png)
+![Регистрация](../../../src/springsecurity/register-form.png)
