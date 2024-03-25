@@ -2,7 +2,7 @@
 
 Термин `method chaining` означает, что при вызове метода, он возвращает после своего выполнения объект, который его вызвал. Это позволяет вызывать методы один за другим, что упрощает настройку.
 
-Например, вспомним такой код из [Урока про конфиг Spring Security](../springsecurity/password_auth/authentication-setup.md):
+Например, вспомним такой код из [Урока про конфиг Spring Security](../springsecurity/authentication/authentication-setup.md):
 
 ```java
 http

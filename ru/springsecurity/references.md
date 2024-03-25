@@ -1,5 +1,5 @@
 1. **Аутентификация:**
-   - [Аутентификация по имени пользователя и паролю](password_auth/username-password.md)
+   - [Аутентификация по имени пользователя и паролю](authentication/username-password.md)
    - [OAuth](oauth/oauth.md)
    - [OIDC (OpenID Connect)](password_auth/odic.md)   
 
