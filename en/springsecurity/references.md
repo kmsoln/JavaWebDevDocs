@@ -14,12 +14,7 @@
     - [Secure Connection](secure/secure-connection.md)
     - [Session Management](secure/session-managmet.md)
 
-4. **Token Management:**
-    - [Bearer Token](token/bearer.md)
-    - [Cookie Token](token/cookie.md)
-    - [JWT (JSON Web Token)](token/jwt.md)
-
-5. **Spring Security:**
+4**Spring Security:**
     - [What is Spring Security?](what-is-spring-security.md)
     - [Configure Spring Security](configure-spring-security.md)
 
