@@ -1,20 +1,20 @@
-1. **Основные концепции:**
-   - [Что такое безопасность?](authentication/what-is-security.md)
+# SECURITY
 
-2. **Аутентификация:**
+
+1. **Аутентификация:**
    - [Введение в аутентификацию](authentication/introduction-of-authentication.md)
    - [Аутентификация по имени пользователя и паролю](authentication/username-password.md)
-   - [OAuth](authentication/oauth.md)
    - [Процесс аутентификации](authentication/process-of-authentication.md)
+   - [OAuth](authentication/oauth.md)
 
-3. **Авторизация:**
+2. **Авторизация:**
    - [Введение в авторизацию](authorization/introduction-of-authorization.md)
-   - [Полномочие](authorization/authority.md)
+   - [Авторитет](authorization/authority.md)
    - [Роль](authorization/role.md)
    - [Политика](authorization/policy.md)
 
-4. **Практики безопасности:**
-   - [Обмен ресурсами между разными источниками (CORS)](secure/cors.md)
-   - [Защита](secure/protection.md)
+3. **Безопасные практики:**
+   - [Поддержка междоменных запросов (CORS)](secure/cors.md)
+   - [Определение правил контроля доступа с CORS](secure/access-control-cors.md)
    - [Безопасное соединение](secure/secure-communication.md)
-   - [Управление сеансом](secure/session-managment.md)
+   - [Управление сеансами](secure/session-managment.md)
