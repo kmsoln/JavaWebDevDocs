@@ -30,6 +30,3 @@ In the upcoming sections, we'll explore the practical implementation of secure c
 
 Embark on the journey to fortify your web application's communication channels, ensuring the confidentiality and integrity of data in transit.
 
----
-
-# [NEXT:]()
