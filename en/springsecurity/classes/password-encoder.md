@@ -162,3 +162,7 @@ public class CustomEncoder implements PasswordEncoder {
 ## Conclusion
 
 `PasswordEncoder` serves as a fundamental interface in Spring Security, enabling secure password storage and verification. Whether utilizing built-in implementations or creating custom ones, developers can ensure that user passwords are hashed using robust cryptographic algorithms, thereby safeguarding them from unauthorized access and enhancing overall application security.
+
+---
+
+[Next: PasswordEncoder](password-encoder.md)

@@ -48,3 +48,7 @@ Once the `UserDetailsService` implementation is created, it can be injected into
 ## Conclusion
 
 `UserDetailsService` is indispensable in Spring Security for retrieving user-specific data from backend repositories during the authentication process. By implementing this interface and integrating it with the user repository, developers can tailor how user details are retrieved and adapt to diverse authentication requirements and data sources seamlessly.
+
+---
+
+# [Next: AuthenticationManager](authentication-manager.md)

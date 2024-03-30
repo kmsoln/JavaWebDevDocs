@@ -60,3 +60,7 @@ Here, `CustomAuthenticationManagerResolver` is injected into the Spring Security
 ## Conclusion
 
 `AuthenticationManagerResolver` equips developers with a potent tool for dynamically resolving the appropriate `AuthenticationManager` based on contextual information. By implementing custom `AuthenticationManagerResolver` implementations, developers can tackle complex authentication scenarios effectively and tailor authentication handling to meet the specific requirements of their applications.
+
+---
+
+# [Back To Main Page](../references.md)

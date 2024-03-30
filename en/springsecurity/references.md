@@ -21,11 +21,8 @@
 - [AuthenticationManager](classes/authentication-manager.md)
 - [AuthenticationProvider](classes/authentication-provider.md)
 - [AuthenticationSuccessHandler](classes/authentication-success-handler.md)
+- [AuthenticationFailureHandler](classes/authentication-failure-handler.md)
 - [AuthenticationManagerResolver](classes/authentication-manager-resolver.md)
-
-### OAuth
-
-- [OAuth Authentication](authentication/oauth/oauth.md)
 
 ## Authorization
 

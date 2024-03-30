@@ -51,3 +51,7 @@ Here, the `authenticate` method of `AuthenticationManager` is utilized to authen
 ## Conclusion
 
 `DaoAuthenticationProvider` simplifies user authentication by delegating user retrieval and credential verification to a `UserDetailsService` or other data access objects. By configuring and employing `DaoAuthenticationProvider` alongside a `UserDetailsService`, developers can seamlessly integrate authentication mechanisms into their Spring Security-enabled applications.
+
+---
+
+# [Next: UserDetails](user-details.md)

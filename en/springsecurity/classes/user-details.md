@@ -118,3 +118,7 @@ Once the `UserDetails` object is retrieved, Spring Security utilizes it for auth
 ## Conclusion
 
 `UserDetails` is a fundamental interface in Spring Security that represents user-specific data required for authentication and authorization. By implementing this interface and providing user details, developers can seamlessly integrate their application's user model with Spring Security, enabling robust security features such as authentication, authorization, and access control.
+
+---
+
+# [Next: UserDetailsService](user-details-service.md)

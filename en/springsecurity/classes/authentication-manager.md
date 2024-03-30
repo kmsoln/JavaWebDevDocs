@@ -48,3 +48,7 @@ Here, the `authenticate` method of `AuthenticationManager` is called to authenti
 ## Conclusion
 
 `AuthenticationManager` serves as the backbone of the authentication process in Spring Security-enabled applications. By configuring and utilizing `AuthenticationManager` alongside appropriate `AuthenticationProvider` instances, developers can establish robust authentication mechanisms to validate user identities and ensure secure access to protected resources.
+
+---
+
+# [Next: AuthenticationProvider](authentication-provider.md)

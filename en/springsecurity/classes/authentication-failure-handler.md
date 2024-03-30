@@ -52,3 +52,7 @@ In this setup, `CustomAuthenticationFailureHandler` is injected into the Spring 
 ## Conclusion
 
 `AuthenticationFailureHandler` offers developers a versatile tool to handle authentication failure events according to the specific needs of their applications. Whether implementing custom logic or leveraging built-in functionalities provided by Spring Security, developers can ensure that failed authentication events are managed effectively and in alignment with their application's requirements.
+
+---
+
+# [Next: AuthenticationManagerResolver](authentication-manager-resolver.md)

@@ -67,3 +67,7 @@ Here, `AuthenticationProvider` is configured with a single instance of `CustomAu
 ## Conclusion
 
 `AuthenticationProvider` is a crucial interface in Spring Security, empowering developers to implement custom authentication mechanisms and seamlessly integrate with user repositories. By crafting custom implementations of `AuthenticationProvider` or leveraging built-in implementations offered by Spring Security, developers can establish robust authentication logic to validate user identities and safeguard access to protected resources.
+
+---
+
+# [Next: AuthenticationSuccessHandler](authentication-success-handler.md)
