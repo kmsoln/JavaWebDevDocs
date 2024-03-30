@@ -39,4 +39,4 @@ As part of the broader Spring ecosystem, Spring Security seamlessly integrates w
 Spring Security benefits from an active and vibrant community of developers, security experts, and enthusiasts who contribute to its ongoing development, enhancement, and support. The community-driven nature of the framework ensures timely updates, bug fixes, and security patches, helping developers stay abreast of emerging security threats and best practices.
 
 ---
-# [NEXT : Setup Spring Security]()
+# [NEXT : Setup Spring Security](setup-spring-security.md)

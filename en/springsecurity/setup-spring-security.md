@@ -45,4 +45,4 @@ For example, if you're using Spring Boot version `2.5.x`, you may want to use Sp
 
 ---
 
-# [NEXT: Configure Spring Security]()
+# [NEXT: Configure Spring Security](configure-spring-security.md)
