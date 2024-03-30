@@ -24,11 +24,17 @@
 - [AuthenticationFailureHandler](classes/authentication-failure-handler.md)
 - [AuthenticationManagerResolver](classes/authentication-manager-resolver.md)
 
+### ~~OAuth~~
+- Soon
+
+### ~~Jwt~~
+- Soon
+
 ## Authorization
 
-- [Authority](authorization/authority.md)
-- [Policy](authorization/policy.md)
-- [Role](authorization/role.md)
+- [Authenticated-Based](authorization/authenticated.md)
+- [Role-Based](authorization/role.md)
+- [Authority-Based](authorization/authority.md)
 
 ## Configuration
 
