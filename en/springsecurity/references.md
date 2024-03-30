@@ -1,7 +1,7 @@
 1. **Authentication:**
-    - [OAuth](authentication/oauth.md)
+    - [OAuth](authentication/oauth/oauth.md)
     - [OIDC (OpenID Connect)](authentication/odic.md)
-    - [Username-Password Authentication](authentication/username-password.md)
+    - [Username-Password Authentication](authentication/username-password/username-password.md)
 
 2. **Authorization:**
     - [Authority](authorization/authority.md)
@@ -14,7 +14,7 @@
     - [Secure Connection](secure/secure-connection.md)
     - [Session Management](secure/session-managmet.md)
 
-4**Spring Security:**
+4. **Spring Security:**
     - [What is Spring Security?](what-is-spring-security.md)
     - [Configure Spring Security](configure-spring-security.md)
 
