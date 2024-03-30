@@ -14,6 +14,6 @@
    - [Безопасное соединение](secure/secure-connection.md)
    - [Управление сеансом](secure/session-managmet.md)
 
-5. **Spring Security:**
+4. **Spring Security:**
    - [Что такое Spring Security?](what-is-spring-security.md)
    - [Настройка Spring Security](configure-spring-security.md)
