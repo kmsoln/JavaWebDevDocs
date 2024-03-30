@@ -1,16 +1,16 @@
 # AuthenticationManagerResolver in Spring Security
 
-In Spring Security, `AuthenticationManagerResolver` is an interface introduced in Spring Security 5.5. It provides a mechanism to dynamically resolve an `AuthenticationManager` based on the context of an authentication request. This allows developers to programmatically determine which `AuthenticationManager` should handle a particular authentication attempt, providing more flexibility in multi-tenant or complex authentication scenarios.
+In Spring Security, `AuthenticationManagerResolver` is a versatile interface introduced in Spring Security 5.5. It enables developers to dynamically resolve an `AuthenticationManager` based on the context of an authentication request. This dynamic resolution capability is particularly valuable in scenarios where different authentication managers are needed based on contextual factors, such as multi-tenancy or varying authentication requirements.
 
 ## Mission of AuthenticationManagerResolver
 
-The primary mission of `AuthenticationManagerResolver` is to resolve an appropriate `AuthenticationManager` for processing an authentication request based on contextual information. It enables developers to implement custom logic to select the most suitable `AuthenticationManager` instance dynamically.
+The primary mission of `AuthenticationManagerResolver` is to dynamically determine the appropriate `AuthenticationManager` instance to handle an authentication request. It empowers developers to programmatically select the most suitable `AuthenticationManager` based on contextual information, allowing for greater flexibility and customization in authentication processing.
 
 ## Example Usage
 
 ### Implementing Custom AuthenticationManagerResolver
 
-Developers can create custom implementations of `AuthenticationManagerResolver` to dynamically determine the `AuthenticationManager` for handling authentication requests.
+Developers can craft custom implementations of `AuthenticationManagerResolver` to dynamically choose the appropriate `AuthenticationManager` for different authentication scenarios.
 
 ### Example:
 
@@ -35,11 +35,11 @@ public class CustomAuthenticationManagerResolver implements AuthenticationManage
 }
 ```
 
-In this example, `CustomAuthenticationManagerResolver` implements the `AuthenticationManagerResolver` interface and overrides the `resolve` method to dynamically select the appropriate `AuthenticationManager` based on the request context.
+In this example, `CustomAuthenticationManagerResolver` implements the `AuthenticationManagerResolver` interface and dynamically selects the appropriate `AuthenticationManager` based on the request context.
 
 ### Configuring AuthenticationManagerResolver
 
-To use `AuthenticationManagerResolver`, configure it in the Spring Security configuration to be invoked when resolving the `AuthenticationManager` for authentication requests.
+To leverage `AuthenticationManagerResolver`, configure it within the Spring Security setup to handle the resolution of `AuthenticationManager` instances for authentication requests.
 
 ### Example:
 
@@ -55,8 +55,8 @@ protected void configure(HttpSecurity http) throws Exception {
 }
 ```
 
-In this example, `CustomAuthenticationManagerResolver` is injected into the Spring Security configuration and configured as the resolver for determining the `AuthenticationManager` for authentication requests.
+Here, `CustomAuthenticationManagerResolver` is injected into the Spring Security configuration and designated as the resolver responsible for determining the `AuthenticationManager` to handle authentication requests.
 
 ## Conclusion
 
-`AuthenticationManagerResolver` provides developers with a powerful mechanism to dynamically resolve the appropriate `AuthenticationManager` for processing authentication requests based on contextual information. By implementing custom `AuthenticationManagerResolver` implementations, developers can address complex authentication scenarios and achieve greater flexibility in handling authentication within their applications.
+`AuthenticationManagerResolver` equips developers with a potent tool for dynamically resolving the appropriate `AuthenticationManager` based on contextual information. By implementing custom `AuthenticationManagerResolver` implementations, developers can tackle complex authentication scenarios effectively and tailor authentication handling to meet the specific requirements of their applications.

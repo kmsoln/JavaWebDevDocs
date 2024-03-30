@@ -1,15 +1,14 @@
 # UserDetails in Spring Security
 
-In Spring Security, `UserDetails` is an interface that represents core user information retrieved by the `UserDetailsService`. It encapsulates essential user details such as username, password, authorities, and whether the user's account is enabled or not. Understanding `UserDetails` is crucial for implementing custom user authentication and authorization mechanisms in Spring Security.
+In Spring Security, `UserDetails` serves as an interface representing core user information retrieved by the `UserDetailsService`. It encapsulates essential user details such as username, password, authorities, and the status of the user's account. Understanding `UserDetails` is essential for implementing custom user authentication and authorization mechanisms in Spring Security.
 
 ## Mission of UserDetails
 
-The primary mission of the `UserDetails` interface is to provide a standardized way to represent user information within Spring Security. It serves as a contract for classes that load user-specific data for authentication and authorization purposes. By implementing `UserDetails`, developers can create custom user objects that Spring Security can use to authenticate users and apply access control policies.
-
+The primary mission of the `UserDetails` interface is to provide a standardized way to represent user information within Spring Security. It acts as a contract for classes responsible for loading user-specific data for authentication and authorization purposes. By implementing `UserDetails`, developers can create custom user objects that Spring Security can use to authenticate users and apply access control policies.
 
 ## Existing Methods in UserDetails
 
-The `UserDetails` interface already defines several methods for accessing user information:
+The `UserDetails` interface defines several methods for accessing user information:
 
 - `String getPassword()`: Returns the user's password.
 - `String getUsername()`: Returns the user's username.
@@ -23,10 +22,6 @@ The `UserDetails` interface already defines several methods for accessing user i
 ### Retrieving UserDetails
 
 When a user attempts to authenticate in a Spring Security-enabled application, the `UserDetailsService` is responsible for loading the `UserDetails` object associated with the provided username. This `UserDetails` object typically contains the user's credentials (e.g., password), authorities (e.g., roles), and other relevant information required for authentication and authorization.
-
-### Example:
-
-## Example Usage
 
 ### Implementing UserDetails
 
@@ -85,6 +80,7 @@ public class CustomUserDetails implements UserDetails {
     }
 }
 ```
+
 ### Creating UserDetails Object
 
 Once you have implemented the `UserDetails` interface, you can create instances of your custom user class and populate them with user information. Here's how you can create a `UserDetails` object using the custom implementation:
@@ -121,4 +117,4 @@ Once the `UserDetails` object is retrieved, Spring Security utilizes it for auth
 
 ## Conclusion
 
-`UserDetails` is a fundamental interface in Spring Security that represents user-specific data required for authentication and authorization. By implementing this interface and providing user details, developers can integrate their application's user model seamlessly with Spring Security, enabling robust security features such as authentication, authorization, and access control.
+`UserDetails` is a fundamental interface in Spring Security that represents user-specific data required for authentication and authorization. By implementing this interface and providing user details, developers can seamlessly integrate their application's user model with Spring Security, enabling robust security features such as authentication, authorization, and access control.

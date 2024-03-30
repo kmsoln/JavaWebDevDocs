@@ -1,16 +1,16 @@
 # PasswordEncoder in Spring Security
 
-In Spring Security, `PasswordEncoder` is an interface used for encoding and verifying passwords. It provides a standardized way to securely store and compare passwords in a system. Understanding `PasswordEncoder` is essential for implementing secure authentication mechanisms and protecting user credentials from unauthorized access.
+In Spring Security, the `PasswordEncoder` interface plays a pivotal role in encoding and verifying passwords securely. It provides a standardized approach to hash passwords, ensuring their protection from unauthorized access. Understanding `PasswordEncoder` is essential for implementing robust authentication mechanisms and safeguarding user credentials effectively.
 
 ## Mission of PasswordEncoder
 
-The primary mission of the `PasswordEncoder` interface is to ensure the secure storage and verification of user passwords. It allows developers to encode plain-text passwords into a hashed format before storing them in a database or other storage mechanisms. When authenticating users, `PasswordEncoder` can compare the hashed password with the provided plain-text password to verify their authenticity without exposing sensitive information.
+The primary objective of the `PasswordEncoder` interface is to ensure the secure storage and verification of user passwords. It enables developers to encode plain-text passwords into hashed formats before storing them, enhancing security by preventing exposure of sensitive user data. When authenticating users, `PasswordEncoder` facilitates comparison between hashed passwords and provided plain-text passwords, ensuring authentication integrity without compromising security.
 
 ## Example Usage
 
 ### Using PasswordEncoder
 
-To use a `PasswordEncoder`, developers typically choose an implementation provided by Spring Security, such as `BCryptPasswordEncoder` or `Pbkdf2PasswordEncoder`. These implementations use strong cryptographic algorithms to hash passwords securely.
+To utilize a `PasswordEncoder`, developers typically choose an implementation provided by Spring Security, such as `BCryptPasswordEncoder` or `Pbkdf2PasswordEncoder`. These implementations utilize robust cryptographic algorithms for secure password hashing.
 
 ### Example:
 
@@ -21,11 +21,11 @@ public PasswordEncoder passwordEncoder() {
 }
 ```
 
-In this example, a `BCryptPasswordEncoder` is configured as a `@Bean` in the Spring application context. This `PasswordEncoder` implementation uses the BCrypt hashing algorithm to securely encode passwords.
+In this example, a `BCryptPasswordEncoder` is configured as a `@Bean` within the Spring application context. This implementation employs the BCrypt hashing algorithm, known for its security and strength.
 
 ### Encoding Passwords
 
-When creating or updating user accounts, developers can use the `PasswordEncoder` to encode plain-text passwords before storing them in the database.
+When creating or updating user accounts, developers can leverage the `PasswordEncoder` to hash plain-text passwords securely before storing them.
 
 ### Example:
 
@@ -39,11 +39,11 @@ public void createUser(String username, String password) {
 }
 ```
 
-In this example, the `encode` method of the `PasswordEncoder` is used to hash the plain-text password before storing it in the database.
+Here, the `encode` method of `PasswordEncoder` is used to hash the plain-text password before persisting it in the database.
 
 ### Verifying Passwords
 
-When authenticating users, developers can use the `PasswordEncoder` to verify that the provided password matches the hashed password stored in the database.
+During user authentication, developers can employ the `PasswordEncoder` to verify that the provided password matches the hashed password stored in the database.
 
 ### Example:
 
@@ -52,30 +52,30 @@ When authenticating users, developers can use the `PasswordEncoder` to verify th
 private PasswordEncoder passwordEncoder;
 
 public boolean authenticate(String username, String password) {
-    // Retrieve the user's encoded password from the database
-    String encodedPassword = userService.getPasswordByUsername(username);
-    // Verify the provided password against the encoded password
-    return passwordEncoder.matches(password, encodedPassword);
+    // Retrieve the user's hashed password from the database
+    String hashedPassword = userService.getPasswordByUsername(username);
+    // Verify the provided password against the hashed password
+    return passwordEncoder.matches(password, hashedPassword);
 }
 ```
 
-In this example, the `matches` method of the `PasswordEncoder` is used to compare the provided plain-text password with the hashed password retrieved from the database.
+In this example, the `matches` method of `PasswordEncoder` compares the provided plain-text password with the hashed password retrieved from the database, ensuring authentication integrity.
 
 ## Existing Hashing Types in Spring Security
 
-Spring Security provides several `PasswordEncoder` implementations, including:
+Spring Security offers several `PasswordEncoder` implementations, including:
 
-- **BCryptPasswordEncoder**: Uses the BCrypt hashing algorithm.
+- **BCryptPasswordEncoder**: Utilizes the BCrypt hashing algorithm.
 - **Pbkdf2PasswordEncoder**: Implements the PBKDF2 algorithm with HMAC SHA-1 as the hash function.
 - **SCryptPasswordEncoder**: Utilizes the scrypt hashing algorithm.
 
 ## Custom Hashing Mechanism
 
-In addition to the built-in `PasswordEncoder` implementations provided by Spring Security, developers can create custom hashing mechanisms to meet specific requirements or use alternative hashing algorithms. Here's a step-by-step guide on how to implement a custom hashing mechanism:
+Besides the built-in `PasswordEncoder` implementations provided by Spring Security, developers can create custom hashing mechanisms to fulfill specific requirements or utilize alternative hashing algorithms. Here's a step-by-step guide on implementing a custom hashing mechanism:
 
 ### Step 1: Define Custom PasswordEncoder
 
-Create a new class that implements the `PasswordEncoder` interface provided by Spring Security. This class will contain the logic for hashing passwords according to the desired hashing algorithm.
+Create a class that implements the `PasswordEncoder` interface, incorporating the logic for hashing passwords based on the desired algorithm.
 
 ### Example:
 
@@ -84,28 +84,19 @@ public class CustomPasswordEncoder implements PasswordEncoder {
 
     @Override
     public String encode(CharSequence rawPassword) {
-        // Implement custom password hashing logic here
-        return customHashFunction(rawPassword.toString());
+        // Implement custom password hashing logic
     }
 
     @Override
     public boolean matches(CharSequence rawPassword, String encodedPassword) {
-        // Implement custom password verification logic here
-        String hashedPassword = encode(rawPassword);
-        return hashedPassword.equals(encodedPassword);
-    }
-
-    // Define custom hash function
-    private String customHashFunction(String password) {
-        // Implement custom hashing algorithm (e.g., SHA-256, MD5, etc.)
-        // Return the hashed password
+        // Implement custom password verification logic
     }
 }
 ```
 
 ### Step 2: Configure Custom PasswordEncoder
 
-Register the custom `PasswordEncoder` bean in the Spring application context configuration. This allows Spring Security to use the custom hashing mechanism during password encoding and verification.
+Register the custom `PasswordEncoder` bean in the Spring application context configuration, allowing Spring Security to utilize the custom hashing mechanism for password encoding and verification.
 
 ### Example:
 
@@ -116,27 +107,15 @@ public PasswordEncoder passwordEncoder() {
 }
 ```
 
-### Step 3: Use Custom PasswordEncoder
+### Step 3: Utilize Custom PasswordEncoder
 
 Inject the custom `PasswordEncoder` bean into authentication mechanisms or services where password encoding or verification is required. Update the configuration to use the custom `PasswordEncoder` implementation.
 
-### Example:
-
-```java
-@Autowired
-private PasswordEncoder passwordEncoder;
-
-public void createUser(String username, String password) {
-    String encodedPassword = passwordEncoder.encode(password);
-    // Save the user with the encoded password
-}
-```
-
 ### Step 4: Test and Validate
 
-Test the custom hashing mechanism thoroughly to ensure that it securely hashes passwords and accurately verifies them during authentication. Validate the implementation against known security standards and best practices.
+Thoroughly test the custom hashing mechanism to ensure it securely hashes passwords and accurately verifies them during authentication. Validate the implementation against established security standards and best practices.
 
-### Example For Custom Encoder
+### Example for Custom Encoder
 
 ```java
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -182,4 +161,4 @@ public class CustomEncoder implements PasswordEncoder {
 
 ## Conclusion
 
-`PasswordEncoder` is a crucial interface in Spring Security that enables secure password storage and verification. By using `PasswordEncoder` implementations provided by Spring Security or creating custom ones, developers can ensure that user passwords are hashed using strong cryptographic algorithms, protecting them from unauthorized access and enhancing overall application security.
+`PasswordEncoder` serves as a fundamental interface in Spring Security, enabling secure password storage and verification. Whether utilizing built-in implementations or creating custom ones, developers can ensure that user passwords are hashed using robust cryptographic algorithms, thereby safeguarding them from unauthorized access and enhancing overall application security.

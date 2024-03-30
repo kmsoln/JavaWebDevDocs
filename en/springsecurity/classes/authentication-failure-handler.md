@@ -1,16 +1,16 @@
 # AuthenticationFailureHandler in Spring Security
 
-In Spring Security, `AuthenticationFailureHandler` is an interface responsible for handling failed authentication events. It allows developers to define custom logic that should be executed when authentication fails, such as redirecting to an error page, logging authentication failures, or sending custom HTTP responses.
+In Spring Security, the `AuthenticationFailureHandler` interface serves as the handler for authentication failure events. It empowers developers to specify custom actions to be taken when authentication attempts fail, such as redirecting to an error page, logging authentication failures, or sending tailored HTTP responses.
 
 ## Mission of AuthenticationFailureHandler
 
-The primary mission of `AuthenticationFailureHandler` is to provide developers with a hook to execute custom behavior after a user fails to authenticate. This can include actions such as redirecting users to an error page, sending custom error messages, or performing additional processing based on the authentication context.
+The core mission of `AuthenticationFailureHandler` is to offer developers a means to execute customized logic following failed authentication attempts. This includes responding to authentication failures with actions like redirecting users to an error page, providing custom error messages, or performing additional processing based on the authentication context.
 
 ## Example Usage
 
 ### Implementing Custom AuthenticationFailureHandler
 
-Developers can create custom implementations of `AuthenticationFailureHandler` to define behavior for handling failed authentication events.
+Developers can implement custom `AuthenticationFailureHandler` implementations to define how failed authentication events should be handled.
 
 ### Example:
 
@@ -20,17 +20,17 @@ public class CustomAuthenticationFailureHandler implements AuthenticationFailure
 
     @Override
     public void onAuthenticationFailure(HttpServletRequest request, HttpServletResponse response, AuthenticationException exception) throws IOException, ServletException {
-        // Custom logic to execute after failed authentication
+        // Custom logic to handle authentication failure events
         response.sendError(HttpServletResponse.SC_UNAUTHORIZED, "Authentication failed: " + exception.getMessage());
     }
 }
 ```
 
-In this example, `CustomAuthenticationFailureHandler` implements the `AuthenticationFailureHandler` interface and overrides the `onAuthenticationFailure` method to send a custom error message in the HTTP response after failed authentication.
+In this example, `CustomAuthenticationFailureHandler` implements the `AuthenticationFailureHandler` interface and overrides the `onAuthenticationFailure` method to send a custom error message in the HTTP response after a failed authentication attempt.
 
 ### Configuring AuthenticationFailureHandler
 
-To use `AuthenticationFailureHandler`, configure it in the Spring Security configuration to be invoked upon failed authentication events.
+To utilize `AuthenticationFailureHandler`, it needs to be configured within the Spring Security setup to respond appropriately to failed authentication events.
 
 ### Example:
 
@@ -47,8 +47,8 @@ protected void configure(HttpSecurity http) throws Exception {
 }
 ```
 
-In this example, `CustomAuthenticationFailureHandler` is injected into the Spring Security configuration and configured as the failure handler for form-based authentication.
+In this setup, `CustomAuthenticationFailureHandler` is injected into the Spring Security configuration and configured as the failure handler for form-based authentication.
 
 ## Conclusion
 
-`AuthenticationFailureHandler` provides developers with a flexible mechanism to define custom behavior after failed user authentication events. By implementing custom `AuthenticationFailureHandler` implementations or using built-in ones provided by Spring Security, developers can tailor the authentication failure handling to meet the specific requirements of their applications.
+`AuthenticationFailureHandler` offers developers a versatile tool to handle authentication failure events according to the specific needs of their applications. Whether implementing custom logic or leveraging built-in functionalities provided by Spring Security, developers can ensure that failed authentication events are managed effectively and in alignment with their application's requirements.

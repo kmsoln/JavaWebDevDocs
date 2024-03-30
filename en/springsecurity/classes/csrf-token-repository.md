@@ -1,16 +1,16 @@
 # CsrfTokenRepository in Spring Security
 
-In Spring Security, `CsrfTokenRepository` is an interface responsible for generating and storing CSRF (Cross-Site Request Forgery) tokens. CSRF tokens are used to prevent unauthorized requests from being executed by ensuring that requests originated from trusted sources and include a valid CSRF token. This interface provides methods for generating, storing, retrieving, and validating CSRF tokens within a Spring Security-enabled application.
+In Spring Security, `CsrfTokenRepository` is a critical interface responsible for managing CSRF (Cross-Site Request Forgery) tokens. These tokens are crucial for preventing unauthorized requests by ensuring that requests originate from trusted sources and include valid CSRF tokens. This interface offers methods for generating, storing, retrieving, and validating CSRF tokens within a Spring Security-enabled application.
 
 ## Mission of CsrfTokenRepository
 
-The primary mission of `CsrfTokenRepository` is to manage CSRF tokens within a Spring Security-enabled application. It generates unique CSRF tokens for each user session, stores them securely, and provides mechanisms for retrieving and validating tokens during request processing. By using CSRF tokens, developers can protect their applications from CSRF attacks by ensuring that only authorized requests are executed.
+The primary objective of `CsrfTokenRepository` is to handle CSRF tokens effectively within a Spring Security-enabled application. It generates unique CSRF tokens for each user session, securely stores them, and provides mechanisms for retrieving and validating tokens during request processing. By employing CSRF tokens, developers can safeguard their applications against CSRF attacks, ensuring that only authorized requests are executed.
 
 ## Example Usage
 
 ### Implementing Custom CsrfTokenRepository
 
-Developers can create custom implementations of `CsrfTokenRepository` to define how CSRF tokens are generated, stored, and validated within their applications.
+Developers can craft custom implementations of `CsrfTokenRepository` to dictate how CSRF tokens are managed within their applications.
 
 ### Example:
 
@@ -52,11 +52,11 @@ public class CustomCsrfTokenRepository implements CsrfTokenRepository {
 }
 ```
 
-In this example, `CustomCsrfTokenRepository` implements the `CsrfTokenRepository` interface and overrides the methods to generate, store, retrieve, and validate CSRF tokens. It uses a concurrent map (`tokenStore`) to store tokens in memory.
+In this example, `CustomCsrfTokenRepository` implements the `CsrfTokenRepository` interface and handles methods for generating, storing, retrieving, and validating CSRF tokens. It utilizes a concurrent map (`tokenStore`) to store tokens in memory.
 
 ### Configuring CsrfTokenRepository
 
-To use `CsrfTokenRepository`, configure it in the Spring Security configuration to be invoked during CSRF token handling.
+To utilize `CsrfTokenRepository`, configure it in the Spring Security setup to handle CSRF token operations.
 
 ### Example:
 
@@ -73,12 +73,8 @@ protected void configure(HttpSecurity http) throws Exception {
 }
 ```
 
-In this example, `CustomCsrfTokenRepository` is injected into the Spring Security configuration and configured as the CSRF token repository for handling CSRF tokens.
+In this example, `CustomCsrfTokenRepository` is injected into the Spring Security configuration and assigned as the CSRF token repository for managing CSRF tokens.
 
 ## Conclusion
 
-`CsrfTokenRepository` provides developers with a flexible mechanism to manage CSRF tokens within Spring Security-enabled applications. By implementing custom `CsrfTokenRepository` implementations, developers can define how CSRF tokens are generated, stored, retrieved, and validated, ensuring robust protection against CSRF attacks.
-
----
-
-Feel free to let me know if there's anything else you'd like to add or if you have any questions!
+`CsrfTokenRepository` empowers developers with a versatile approach to managing CSRF tokens within Spring Security-enabled applications. By crafting custom `CsrfTokenRepository` implementations, developers can define the behavior of CSRF token management, ensuring robust protection against CSRF attacks.
