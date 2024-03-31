@@ -45,4 +45,4 @@ public class PassportController {
 
 Теперь, когда пользователь отправит GET запрос на `/passport`, контроллер вернет Thymeleaf-шаблон `passport.html`, который отобразит паспортные данные на странице.
 
-# [**Следующий урок**: *Валидация*](validation.md)
+# [**Следующий урок**: *Валидация*](features/validation.md)

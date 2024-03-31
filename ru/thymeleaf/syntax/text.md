@@ -1,4 +1,4 @@
-# [**Назад**: *Синтаксис Thymeleaf*](thymeleaf-syntax.md)
+# [**Назад**: *Синтаксис Thymeleaf*](../features/thymeleaf-syntax.md)
 
 # Текст в Thymeleaf
 
@@ -18,4 +18,4 @@
 
 В этом примере мы использовали `th:utext` для того, чтобы внутри текста можно было использовать HTML-теги. Таким образом, на странице будет выведено "Hello, **World**!".
 
-# [**Назад**: *Синтаксис Thymeleaf*](thymeleaf-syntax.md)
+# [**Назад**: *Синтаксис Thymeleaf*](../features/thymeleaf-syntax.md)

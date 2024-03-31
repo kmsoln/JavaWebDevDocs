@@ -1,4 +1,4 @@
-# [**Назад**: *Синтаксис Thymeleaf*](thymeleaf-syntax.md)
+# [**Назад**: *Синтаксис Thymeleaf*](../features/thymeleaf-syntax.md)
 
 # Стандартные выражения Thymeleaf
 
@@ -36,4 +36,4 @@
 
 В этом примере мы использовали выражение `*{user.name}` для вставки свойства `name` объекта `user`, и выражение `${user.surname}` для вставки переменной `surname`. Таким образом, на странице будет выведено имя и фамилия пользователя.
 
-# [**Назад**: *Синтаксис Thymeleaf*](thymeleaf-syntax.md)
+# [**Назад**: *Синтаксис Thymeleaf*](../features/thymeleaf-syntax.md)

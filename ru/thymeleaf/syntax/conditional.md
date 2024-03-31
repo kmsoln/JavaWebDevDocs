@@ -1,4 +1,4 @@
-# [**Назад**: *Синтаксис Thymeleaf*](thymeleaf-syntax.md)
+# [**Назад**: *Синтаксис Thymeleaf*](../features/thymeleaf-syntax.md)
 
 # Условия в Thymeleaf
 
@@ -56,5 +56,5 @@
 ```
 
 
-# [**Назад**: *Синтаксис Thymeleaf*](thymeleaf-syntax.md)
+# [**Назад**: *Синтаксис Thymeleaf*](../features/thymeleaf-syntax.md)
 

@@ -1,4 +1,4 @@
-# [**Назад**: *Синтаксис Thymeleaf*](thymeleaf-syntax.md)
+# [**Назад**: *Синтаксис Thymeleaf*](../features/thymeleaf-syntax.md)
 
 # Ссылки в выражениях в Thymeleaf
 
@@ -24,4 +24,4 @@
 
 Также, ссылки можно использовать для передачи параметров в POST-запросе. Для этого используются формы [формы в Thymeleaf](syntax-forms.md).
 
-# [**Назад**: *Синтаксис Thymeleaf*](thymeleaf-syntax.md)
+# [**Назад**: *Синтаксис Thymeleaf*](../features/thymeleaf-syntax.md)

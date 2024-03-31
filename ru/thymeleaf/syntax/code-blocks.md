@@ -1,4 +1,4 @@
-# [**Назад**: *Синтаксис Thymeleaf*](thymeleaf-syntax.md)
+# [**Назад**: *Синтаксис Thymeleaf*](features/thymeleaf-syntax.md)
 
 # Блоки в Thymeleaf
 
@@ -24,4 +24,4 @@
 - `th:remove` - удаляет текущий элемент
 - `th:include` - вставляет содержимое фрагмента шаблона в текущий элемент (устарел в Thymeleaf 3, используйте `th:insert`)
 
-# [**Назад**: *Синтаксис Thymeleaf*](thymeleaf-syntax.md)
+# [**Назад**: *Синтаксис Thymeleaf*](features/thymeleaf-syntax.md)

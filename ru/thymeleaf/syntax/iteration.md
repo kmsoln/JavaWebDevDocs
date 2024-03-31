@@ -1,4 +1,4 @@
-# [**Назад**: *Синтаксис Thymeleaf*](thymeleaf-syntax.md)
+# [**Назад**: *Синтаксис Thymeleaf*](../features/thymeleaf-syntax.md)
 
 # Цикл each в Thymeleaf
 
@@ -21,4 +21,4 @@ Kiwi
 
 Таким образом, вы можете использовать переменные внутри Thymeleaf, чтобы управлять содержимым веб страницы.
 
-# [**Назад**: *Синтаксис Thymeleaf*](thymeleaf-syntax.md)
+# [**Назад**: *Синтаксис Thymeleaf*](../features/thymeleaf-syntax.md)
