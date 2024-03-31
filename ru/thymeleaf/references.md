@@ -1,40 +1,40 @@
-## Thymeleaf
+# Thymeleaf
 
-### Introduction and Overview
-1. [Overview of Thymeleaf](what-is-thymeleaf.md)
+### Введение и Обзор
+1. [Обзор Thymeleaf](what-is-thymeleaf.md)
 
-### Configuration and Setup
-1. [Thymeleaf Setup](setup-thymeleaf.md)
-2. [Configure Thymeleaf](configure-thymeleaf.md)
+### Конфигурация и Установка
+1. [Настройка Thymeleaf](setup-thymeleaf.md)
+2. [Настройка Thymeleaf](configure-thymeleaf.md)
 
-### Overview and Templates
-1. [Thymeleaf Syntax Overview](features/syntax.md)
-2. [Creating Templates with Thymeleaf](features/templates.md)
+### Обзор и Шаблоны
+1. [Обзор синтаксиса Thymeleaf](features/syntax.md)
+2. [Создание шаблонов с помощью Thymeleaf](features/templates.md)
 
-### Thymeleaf Syntax and Features
-1. [Localization](syntax/localization.md)
-2. [Arrays](syntax/arrays.md)
-3. [Conditional Statements](syntax/conditional.md)
-4. [Variable](syntax/variables.md)
-5. [Simple Expression](syntax/expressions.md)
-6. [Text](syntax/text.md)
-7. [Formatting Options](syntax/formatting.md)
-8. [Forms](syntax/forms.md)
-9. [Iteration](syntax/iteration.md)
-10. [Creating Links](syntax/links.md)
-11. [Handling Messages](syntax/messages.md)
-12. [Code Blocks](syntax/code-blocks.md)
+### Синтаксис и Возможности Thymeleaf
+1. [Локализация](syntax/localization.md)
+2. [Массивы](syntax/arrays.md)
+3. [Условные выражения](syntax/conditional.md)
+4. [Переменные](syntax/variables.md)
+5. [Простые выражения](syntax/expressions.md)
+6. [Текст](syntax/text.md)
+7. [Опции форматирования](syntax/formatting.md)
+8. [Формы](syntax/forms.md)
+9. [Итерации](syntax/iteration.md)
+10. [Создание ссылок](syntax/links.md)
+11. [Обработка сообщений](syntax/messages.md)
+12. [Блоки кода](syntax/code-blocks.md)
 
-### Integrating Thymeleaf with Spring
-1. [Spring Forms with Thymeleaf](features/spring-forms.md)
+### Интеграция Thymeleaf с Spring
+1. [Thymeleaf и Spring](thymeleaf-spring.md)
+2. [Формы Spring с Thymeleaf](features/spring-forms.md)
 
-### Thymeleaf Security
-1. [What is Thymeleaf Security?](security/what-is-thymeleaf-security.md)
-2. [Setup Thymeleaf Security?](security/setup-thymeleaf-security.md)
-3. [Authenticated User Authorization](security/authenticated.md)
-4. [Role-Based Authorization](security/role.md)
-5. [Authority-Based Authorization](security/authority.md)
+### Безопасность Thymeleaf
+1. [Что такое безопасность Thymeleaf?](security/what-is-thymeleaf-security.md)
+2. [Установка безопасности Thymeleaf](security/setup-thymeleaf-security.md)
+3. [Аутентификация пользователя](security/authenticated.md)
+4. [Ролевая авторизация](security/role.md)
+5. [Авторизация на основе прав](security/authority.md)
 
-### Validation
-1. [Validation in Thymeleaf](features/validation.md)
-
+### Валидация
+1. [Валидация в Thymeleaf](features/validation.md)
