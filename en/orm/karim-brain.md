@@ -2,6 +2,7 @@
 - in this folder we explains everything in theory way. not for specific library. in the library folder we explains everything from code vision. `Securirty` and `Spring Security` idea. I made them as designed in my brain and also as I saw in different internet libraries. good luck repyata.
 - listen, in those files we explain how orm achieve those titles. also we explain the titles again. for example we will speak about procedure, we will explain what is procedure and how it was in the regular way in databases syntax for example, then how orm solved that. u can say that it uses code for bla bla.
 - if needed to use a code example to explain some ideas, u can use jpa to achieve the idea. but you have to mention that you are going to jpa as an example. it's just of needed. try your best to make everything just theories.
+- add diagrams, archetectures. pictures that explains logic.. search in google for that.
 
 ### Basic Operations:
 1. **Mapping Objects to Tables**
