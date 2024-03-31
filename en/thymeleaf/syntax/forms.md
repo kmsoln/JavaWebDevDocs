@@ -53,3 +53,6 @@ public class PassportController {
 
 In this example, we created a `PassportController` controller, which handles the GET request to `/passport` and is responsible for displaying the page. In the `showPassport` method, we create a `passport` object and pass it to the page. This object will be bound to our form, and its fields will contain the data entered by the user.
 
+---
+
+# [**Back to**: *Thymeleaf Syntax*](../features/syntax.md)
