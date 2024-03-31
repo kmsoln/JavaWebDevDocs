@@ -1,4 +1,4 @@
-## Thymeleaf
+# Thymeleaf
 
 ### Introduction and Overview
 1. [Overview of Thymeleaf](what-is-thymeleaf.md)
@@ -26,7 +26,8 @@
 12. [Code Blocks](syntax/code-blocks.md)
 
 ### Integrating Thymeleaf with Spring
-1. [Spring Forms with Thymeleaf](features/spring-forms.md)
+1. [Thymeleaf and Spring](thymeleaf-spring.md)
+2. [Spring Forms with Thymeleaf](features/spring-forms.md)
 
 ### Thymeleaf Security
 1. [What is Thymeleaf Security?](security/what-is-thymeleaf-security.md)
