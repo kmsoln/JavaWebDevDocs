@@ -19,16 +19,16 @@
 -  Формы - обработка форм [Формы в Thymeleaf][thymeleaf-forms]
 - Форматирование данных [Форматирование][thymeleaf-formatting]
 
-[thymeleaf-text]: ../syntax/syntax-text.md
-[thymeleaf-variables]: ../syntax/syntax-variables.md
-[thymeleaf-if]: ../syntax/syntax-conditional-themeleaf.md
-[thymeleaf-each]: ../syntax/syntax-iteration.md
-[thymeleaf-arrays]: ../syntax/syntax-arrays.md
-[thymeleaf-code-blocks]: ../thymeleaf-code-blocks.md
-[thymeleaf-links]: ../syntax/syntax-links.md
-[thymeleaf-standard-expressions]: ../syntax/syntax-simple-expressions.md
-[thymeleaf-messages]: ../syntax/syntax-messages.md
-[thymeleaf-forms]: ../syntax/syntax-forms.md
-[thymeleaf-formatting]: ../syntax/syntax-formatting.md
+[thymeleaf-text]: ../syntax/text.md
+[thymeleaf-variables]: ../syntax/variables.md
+[thymeleaf-if]: ../syntax/conditional.md
+[thymeleaf-each]: ../syntax/iteration.md
+[thymeleaf-arrays]: ../syntax/arrays.md
+[thymeleaf-code-blocks]: ../syntax/code-blocks.md
+[thymeleaf-links]: ../syntax/links.md
+[thymeleaf-standard-expressions]: ../syntax/expressions.md
+[thymeleaf-messages]: ../syntax/messages.md
+[thymeleaf-forms]: ../syntax/forms.md
+[thymeleaf-formatting]: ../syntax/formatting.md
 
 # [**Следующий урок**: *Thymeleaf и Spring*](../thymeleaf-spring.md)
