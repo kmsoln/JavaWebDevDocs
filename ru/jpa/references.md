@@ -1,20 +1,17 @@
-
 # JPA
 
-## 1. Introduction to JPA
-- [What is JPA?](what-is-jpa.md)
-- [How JPA Works](how-jpa-works.md)
+## 1. Введение в JPA
+- [Что такое JPA?](what-is-jpa.md)
 
-## 2. Setting Up JPA
-- [Configuring JPA](configure-jpa.md)
+## 2. Настройка JPA
+- [Настройка JPA](configure-hibernate.md)
 
-## 3. Understanding JPA Architecture
-- [JPA Architecture](architecture-jpa.md)
+## 3. Понимание архитектуры JPA
+- [Архитектура JPA](architecture-jpa.md)
 
-## 4. Entity Mapping
+## 4. Аннотации Entity
 - [Entity](entity/entity.md)
 - [Column](entity/column.md)
-- [Embeddable](entity/embeddable.md)
 - [Embedded ID](entity/embedded-id.md)
 - [Embedded](entity/embedded.md)
 - [Generated Value](entity/generated-value.md)
@@ -23,58 +20,57 @@
 - [Many-to-Many](entity/many-to-many.md)
 - [Many-to-One](entity/many-to-one.md)
 - [One-to-Many](entity/one-to-many.md)
-- [Table](entity/table.md)
 - [Temporal](entity/temporal.md)
 - [Transient](entity/transient.md)
 - [Version](entity/version.md)
 
-## 5. CRUD Operations
-- [What is CRUD?](crud/what-is-crud.md)
-- [Create](crud/create.md)
-- [Read](crud/read.md)
-- [Update](crud/update.md)
-- [Delete](crud/delete.md)
+## 5. CRUD операции
+- [Что такое CRUD?](crud/what-is-crud.md)
+- [Создание](crud/create.md)
+- [Чтение](crud/read.md)
+- [Изменение](crud/update.md)
+- [Удаление](crud/delete.md)
 
-## 6. Operations
-- [Create Table](operations/create-table.md)
+## 6. Операции
+- [Создание таблицы](operations/create-table.md)
 
-## 7. Querying
-- [Named Queries](query/named-queries.md)
-- [Named Query](query/named-query.md)
-- [Named Native Queries](query/named-native-queries.md)
-- [Named Native Query](query/named-native-query.md)
+## 7. Запросы
+- [Именованные запросы](query/named-queries.md)
+- [Именованный запрос](query/named-query.md)
+- [Именованные нативные запросы](query/named-native-queries.md)
+- [Именованный нативный запрос](query/named-native-query.md)
 
-## 8. Relationships
-- [One-to-One](relationships/one-to-one.md)
-- [One-to-Many](relationships/one-to-many.md)
-- [Many-to-One](relationships/many-to-one.md)
-- [Many-to-Many](relationships/many-to-many.md)
+## 8. Отношения
+- [Один к одному](relationships/one-to-one.md)
+- [Один ко многим](relationships/one-to-many.md)
+- [Многие к одному](relationships/many-to-one.md)
+- [Многие ко многим](relationships/many-to-many.md)
 
-## 9. Object Management
-- [Queries](objects/queries.md)
-- [Views](objects/views.md)
-- [Triggers](objects/triggers.md)
-- [Procedures](objects/procedures.md)
-- [Functions](objects/functions.md)
+## 9. Управление объектами
+- [Запросы](objects/queries.md)
+- [Представления](objects/views.md)
+- [Триггеры](objects/triggers.md)
+- [Процедуры](objects/procedures.md)
+- [Функции](objects/functions.md)
 
-## 10. Transaction Management
-- [Transactional](transactions/transactional.md)
-- [Transaction Attribute](transactions/transaction-attribute.md)
-- [Transaction Attribute Type](transactions/transaction-attribute-type.md)
-- [Transaction Scoped](transactions/transaction-scoped.md)
-- [Persistence Context Type](transactions/persistence-context-type.md)
+## 10. Управление транзакциями
+- [Транзакционный](transactions/transactional.md)
+- [Атрибут транзакции](transactions/transaction-attribute.md)
+- [Тип атрибута транзакции](transactions/transaction-attribute-type.md)
+- [Ограниченный транзакцией](transactions/transaction-scoped.md)
+- [Тип контекста сохранения](transactions/persistence-context-type.md)
 
-## 11. Development Practices
-- [Constraints](development/constraints.md)
-- [Validations](development/validation.md)
-- [Migrations](development/migrations.md)
+## 11. Практики разработки
+- [Ограничения](development/constraints.md)
+- [Проверки](development/validation.md)
+- [Миграции](development/migrations.md)
 
-## 12. Interaction
-- [Migrations](interaction/migrations.md)
+## 12. Взаимодействие
+- [Миграции](interaction/migrations.md)
 
-## 13. Miscellaneous
-- [Collection Table](miscellaneous/collection-table.md)
-- [Index](miscellaneous/index.md)
-- [Primary Key Join Column](miscellaneous/primary-key-join-column.md)
-- [Secondary Table](miscellaneous/secondary-table.md)
-- [Unique Constraint](miscellaneous/unique-constraint.md)
+## 13. Разное
+- [Таблица коллекций](miscellaneous/collection-table.md)
+- [Индекс](miscellaneous/index.md)
+- [Столбец соединения первичного ключа](miscellaneous/primary-key-join-column.md)
+- [Вторичная таблица](miscellaneous/secondary-table.md)
+- [Уникальное ограничение](miscellaneous/unique-constraint.md)
