@@ -1,85 +1,137 @@
-# Конфиг Spring Security
+# Настройка Spring Security с помощью WebSecurityConfig
 
-Для настройки конфига Spring Security, нам нужно создать класс, в котором мы будем определять настройки. Он может иметь любое имя и расположение, но обычно его называют `SecurityConfig` и помещают в пакет `config`.
+В мире веб-разработки настройка Spring Security является ключевым шагом для укрепления защиты вашего приложения от несанкционированного доступа и злонамеренных атак. Класс `WebSecurityConfig` служит основой вашей конфигурации безопасности, обеспечивая централизованное место для настройки параметров безопасности и определения правил контроля доступа. Давайте рассмотрим, что такое класс `WebSecurityConfig`, зачем мы его создаем, что добавляем внутрь него и где размещаем в структуре нашего проекта.
 
-Вообще, этот класс будет использоваться для любых настроек Spring Security, будь то настройка аутентификации, авторизации или других настроек.
+## Что такое WebSecurityConfig?
 
-В нашем случае, нам надо настроить аутентификацию с логином и паролем. Для этого нам нужно переопределить метод `configure(AuthenticationManagerBuilder auth)`. В этом методе мы можем настроить аутентификацию.
-Напомню, что для написания кода мы используем Spring6 и если какие-то методы не работают, то нужно посмотреть документацию к вашей версии Spring или обновить версию Spring до 6.
+### Понимание класса
 
-Для любых настроек в Spring используется система бинов. Мы можем использовать аннотацию `@Bean` для их создания. Более подробно о бинах можно почитать [тут](../../common/beans.md).
+Класс `WebSecurityConfig` подобен центру управления вашей конфигурацией Spring Security, где вы определяете параметры безопасности, правила контроля доступа и механизмы аутентификации для вашего веб-приложения. Он служит точкой входа для настройки поведения Spring Security, чтобы соответствовать конкретным требованиям безопасности вашего приложения.
 
-В нашем примере мы будем использовать InMemory авторизацию для простоты. Но в реальном проекте, конечно, лучше использовать базу данных, о которой мы поговорим в будущем.
+#### Пример кода:
 
 ```java
-@EnableWebSecurity
+package com.example.myapplication.config;
+
 @Configuration
-public class SecurityConfig {
+@EnableWebSecurity
+public class WebSecurityConfig {
 
-    @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http
-                .authorizeHttpRequests(
-                        (auth) -> auth.anyRequest().permitAll()
-                )
-                .httpBasic(withDefaults())
-                .formLogin(configurer -> {
-                    configurer
-                            .loginPage("/login")
-                            .permitAll()
-                            .successHandler((request, response, authentication) -> {
-                                response.sendRedirect("success?message=You logged in successfully!");
-                            })
-                            .failureHandler(((request, response, exception) -> {
-                                response.sendRedirect("problem?message=Wrong login or password");
-                            }));
-                })
-                .authenticationProvider(authenticationProvider());
-
-        return http.build();
-    }
-
-    @Bean
-    public DaoAuthenticationProvider authenticationProvider() {
-        DaoAuthenticationProvider provider = new DaoAuthenticationProvider(passwordEncoder());
-
-        provider.setUserDetailsService(userDetailsService());
-
-        return provider;
-    }
-
-    @Bean
-    public UserDetailsService userDetailsService() {
-        return new InMemoryUserDetailsManager();
-    }
-
-    @Bean
-    public BCryptPasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
+    // Ваш код конфигурации здесь...
 }
 ```
 
-В этом коде мы создаем класс `SecurityConfig`, который помечен аннотацией `@Configuration`. Это означает, что Spring будет использовать этот класс для настройки.
+## Что добавлять внутрь WebSecurityConfig?
 
-Мы также помечаем его аннотацией `@EnableWebSecurity`, чтобы сообщить Spring, что это конфигурация Spring Security, именно класс с этой аннотацией будет искать Spring при запуске нашего приложения и инициализации настроек безопасности.
+### Ключевые компоненты
 
-Процесс настройки в Spring организован так, чтобы это выглядело максимально просто и наглядно. Обычно это структура `method chaining`, при помощи которой Spring собирает данные и настраивает систему. То какие данные ему передать выбирает программист, используя эти самые методы.
+Внутри класса `WebSecurityConfig` можно добавить:
 
-Перед тем, как продолжить, советую почитать что такое [method chaining (цепочка вызовов)](../common/method-chain.md).
+- **Конфигурация безопасности:**
+    - Определение глобальных параметров безопасности, таких как защита от CSRF, управление сеансами и кодирование паролей.
 
-Итак, в нашем коде мы создаем бин `securityFilterChain`, который возвращает объект `http`, который мы настраиваем. Мы разрешаем все запросы, используя метод `anyRequest().permitAll()`, что означает, что все запросы разрешены.
+#### Пример кода:
 
-Мы также настраиваем базовую аутентификацию и форму входа. В случае успешной аутентификации, мы перенаправляем пользователя на страницу `success`, а в случае ошибки - на страницу `problem`. Что делает этот код конкретно не так важно, главное понимать, что он обрабатывает успех и ошибку логина, перенаправляя пользователя на нужные страницы.
+```java
+@Override
+public void configure(HttpSecurity http) throws Exception {
+    http
+        .csrf().disable()
+        .authorizeRequests()
+            .antMatchers("/public/**").permitAll()
+            .anyRequest().authenticated()
+            .and()
+        .formLogin()
+            .loginPage("/login")
+            .permitAll()
+            .and()
+        .logout()
+            .permitAll();
+}
+```
 
-Мы также создаем бин `authenticationProvider`, который возвращает объект `DaoAuthenticationProvider`. `DaoAuthenticationProvider` - это класс, который наследуется от AuthenticationProvider и используется для настройки источника данных для аутентификации.
+- **Конфигурация аутентификации:**
+    - Настройка механизмов аутентификации, таких как поставщики аутентификации пользователей, аутентификация через LDAP или пользовательские поставщики аутентификации.
 
-То есть суть в том, чтобы указать откуда берутся данные для авторизации и каким образом они там хранятся. Например, в конструкторе мы используем `passwordEncoder`. Это отдельный бин, который отвечает за настройку шифрования паролей. В нашем случае, это BCryptPasswordEncoder. Зачем нам нужно шифровать пароли, можно почитать [тут](user/password-hashing.md).
+#### Пример кода:
 
-Далее, мы создаем бин `userDetailsService`, который возвращает объект `InMemoryUserDetailsManager`. Этот класс используется для хранения пользователей в оперативной памяти.
+```java
+@Autowired
+public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
+    auth
+        .inMemoryAuthentication()
+        .withUser("user").password("{noop}password").roles("USER");
+}
+```
 
-`userDetailsService` мы также устанавливаем в `authenticationProvider`, чтобы он знал откуда брать пользователей для аутентификации.
+- **Конфигурация авторизации:**
+    - Определение правил контроля доступа, ограничений доступа на основе ролей и аннотаций безопасности на уровне методов.
 
-Вот и все. Теперь у нас есть настроенный Spring Security, который использует InMemory хранилище для пользователей и BCrypt для шифрования паролей, но ты мог заметить, что мы еще ни сказали не слова о регистрации пользователей. Об этом мы поговорим в следующем уроке.
+#### Пример кода:
 
-# [**Следующий урок**: *Регистрация*](user/in-memory-registration.md)
+```java
+@Override
+public void configure(HttpSecurity http) throws Exception {
+    http
+        .authorizeRequests()
+            .antMatchers("/admin/**").hasRole("ADMIN")
+            .antMatchers("/user/**").hasRole("USER")
+            .anyRequest().authenticated()
+            .and()
+        .formLogin()
+            .loginPage("/login")
+            .permitAll()
+            .and()
+        .logout()
+            .permitAll();
+}
+```
+
+- **Конфигурация ресурсов:**
+    - Обеспечение безопасности статических ресурсов, конечных точек или путей API с помощью antMatchers и requestMatchers.
+
+#### Пример кода:
+
+```java
+@Override
+public void configure(HttpSecurity http) throws Exception {
+    http
+        .authorizeRequests()
+            .antMatchers("/public/**").permitAll()
+            .antMatchers("/admin/**").hasRole("ADMIN")
+            .antMatchers("/user/**").hasRole("USER")
+            .anyRequest().authenticated()
+            .and()
+        .formLogin()
+            .loginPage("/login")
+            .permitAll()
+            .and()
+        .logout()
+            .permitAll();
+}
+```
+
+## Путь к файлу и его расположение
+
+### Структура проекта
+
+Класс `WebSecurityConfig` обычно размещается в пакете `config` исходного каталога вашего приложения Spring Boot. Точный путь к файлу может варьироваться в зависимости от архитектуры вашего проекта и конвенций организации.
+
+### Пример структуры каталогов
+
+```plaintext
+src
+└── main
+    └── java
+        └── com
+            └── example
+                └── myapplication
+                    ├── config
+                    │   └── WebSecurityConfig.java
+                    └── controller
+                        └── HomeController.java
+```
+
+## Заключение
+
+Класс `WebSecurityConfig` играет важную роль в настройке Spring Security для вашего веб-приложения, обеспечивая централизованное место для определения параметров безопасности, механизмов аутентификации и правил контроля доступа. Создавая и настраивая класс `WebSecurityConfig`, разработчики могут улучшить уровень безопасности своих приложений и защитить их от распространенных угроз безопасности и уязвимостей.
