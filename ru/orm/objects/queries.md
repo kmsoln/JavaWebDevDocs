@@ -67,3 +67,5 @@ List<User> users = entityManager.createQuery(criteriaQuery).getResultList();
     }
 }
 ```
+
+## [К оглавлению](../references.md)
