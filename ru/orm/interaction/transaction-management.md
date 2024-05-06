@@ -59,3 +59,5 @@ public class TransactionExample {
 - `transaction.begin()` запускает новую транзакцию.
 - `transaction.commit()` фиксирует транзакцию (если все операции выполнены успешно).
 - `transaction.rollback()` отменяет транзакцию в случае ошибки.
+
+## [К оглавлению](../references.md)
