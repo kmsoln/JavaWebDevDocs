@@ -43,5 +43,5 @@ public class MoneyTransferService {
 Обратите внимание, что все используемые в этом коде методы типа `findById`, `setBalance` и `save` - это методы 
 репозитория `AccountRepository` и сущности `Account`. Все они должны быть определены в соответствующих классах.
 
-# [**Следующий урок**: *Запросы*](transaction-control.md)
+# [**Следующий урок**: *Проблемы транзакций*](transaction-control.md)
 
