@@ -17,3 +17,5 @@
 2. `Read Committed` [подробнее](../isolation-levels/read-committed.md)
 3. `Repeatable Read` [подробнее](../isolation-levels/repeatable-read.md)
 4. `Serializable` [подробнее](../isolation-levels/serializable.md)
+
+# [**Назад**: *Принципы работы транзакций*](../principles.md)
