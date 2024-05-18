@@ -54,7 +54,7 @@
 - [Функции](objects/functions.md)
 
 ## 10. Управление транзакциями
-- [Транзакционный](../transactions/transactional.md)
+- [Транзакционный](../transactions/transactions-jpa)
 - [Атрибут транзакции](../transactions/transaction-attribute.md)
 - [Тип атрибута транзакции](../transactions/transaction-attribute-type.md)
 - [Ограниченный транзакцией](../transactions/transaction-scoped.md)
