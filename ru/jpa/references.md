@@ -54,11 +54,11 @@
 - [Функции](objects/functions.md)
 
 ## 10. Управление транзакциями
-- [Транзакционный](transactions/transactional.md)
-- [Атрибут транзакции](transactions/transaction-attribute.md)
-- [Тип атрибута транзакции](transactions/transaction-attribute-type.md)
-- [Ограниченный транзакцией](transactions/transaction-scoped.md)
-- [Тип контекста сохранения](transactions/persistence-context-type.md)
+- [Транзакционный](../transactions/transactional.md)
+- [Атрибут транзакции](../transactions/transaction-attribute.md)
+- [Тип атрибута транзакции](../transactions/transaction-attribute-type.md)
+- [Ограниченный транзакцией](../transactions/transaction-scoped.md)
+- [Тип контекста сохранения](../transactions/persistence-context-type.md)
 
 ## 11. Практики разработки
 - [Ограничения](development/constraints.md)
