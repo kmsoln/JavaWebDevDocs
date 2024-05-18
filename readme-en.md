@@ -44,7 +44,7 @@ Intro for the docs
     - [JWT (JSON Web Token)](en/security/token/jwt.md)
 
 7. **Spring Security:**
-    - [What is Spring Security?](en/springsecurity/what-is-spring-security.md)
-    - [Configure Spring Security](en/springsecurity/configure-spring-security.md)
+    - [What is Spring Security?](en/springbootsecurity/what-is-spring-security.md)
+    - [Configure Spring Security](en/springbootsecurity/configure-spring-security.md)
 
 
