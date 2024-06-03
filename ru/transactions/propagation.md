@@ -24,3 +24,5 @@
 6. [**NEVER**](propagation/never.md)
 7. [**NESTED**](propagation/nested.md)
 
+# [**Следующий урок**: *Readonly*](readonly.md)
+
