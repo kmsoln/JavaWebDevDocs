@@ -41,3 +41,5 @@ public class MoneyTransferService {
 
 Если не указывать уровень изоляции явно, то будет использован уровень по умолчанию, который зависит от используемой базы
 данных. Например, в MySQL по умолчанию используется уровень изоляции [REPEATABLE_READ](isolation-levels/repeatable-read.md).
+
+# [**Следующий урок**: *Propagation*](propagation.md)
