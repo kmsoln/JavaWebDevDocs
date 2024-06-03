@@ -1,14 +1,11 @@
-# Transactional Propagation - NEVER в Java
+# Propagation level - NEVER
 
-## Введение
+Уровень распространения `NEVER` означает, что текущий метод должен выполняться без транзакции. Если текущая транзакция
+существует, будет выброшено исключение. Этот уровень распространения обеспечивает выполнение метода без транзакции, даже если
+он вызывается из метода существующей транзакции. Если метод вызывается из метода с транзакцией, будет выброшено исключение.
 
-В этой методической инструкции мы рассмотрим одно из видов propagation — NEVER.
-
-## Что такое Propagation.NEVER?
-
-`Propagation.NEVER` означает, что метод не будет выполняться в рамках существующей транзакции. Если текущая транзакция существует, будет выброшено исключение `IllegalTransactionStateException`.
-
-### Пример:
+Например, у нас есть два сервиса: `ExampleService` и `AnotherService`. Метод `performOperation` в `ExampleService` вызывает
+метод `neverTransactionMethod` в `AnotherService`, который аннотирован уровнем распространения `NEVER`.
 
 ```java
 @Service
@@ -19,7 +16,7 @@ public class ExampleService {
 
     @Transactional(propagation = Propagation.REQUIRED)
     public void performOperation() {
-        anotherService.neverTransactionMethod(); // Это вызовет IllegalTransactionStateException
+        anotherService.neverTransactionMethod();
         // Другие операции
     }
 }
@@ -29,14 +26,16 @@ public class AnotherService {
 
     @Transactional(propagation = Propagation.NEVER)
     public void neverTransactionMethod() {
-        // Логика, которая не должна выполняться в рамках транзакции
+        // Логика, которая не требует транзакции
     }
 }
 ```
 
-## Объяснение поведения
-### Вызов с существующей транзакцией
-Когда метод performOperation вызывается, создается новая транзакция, так как установлен Propagation.REQUIRED. Затем вызывается метод neverTransactionMethod, который аннотирован как Propagation.NEVER. Поскольку этот метод не должен выполняться в рамках существующей транзакции, выбрасывается исключение IllegalTransactionStateException.
+В этом примере `neverTransactionMethod` в `AnotherService` требует отсутствия транзакции. Метод `performOperation` в
+`ExampleService` создает транзакцию, поскольку у него установлен уровень распространения `REQUIRED`. Если метод
+`neverTransactionMethod` вызывается из метода с транзакцией, будет выброшено исключение.
 
-### Вызов без существующей транзакции
-Если метод neverTransactionMethod вызывается без существующей транзакции (например, из метода без аннотации @Transactional), то он выполняется нормально, не в рамках транзакции.
+Если же метод `neverTransactionMethod` вызывается из метода без транзакции, он будет выполнен без транзакции.
+
+# [**Назад**: *Уровни распространения*](../propagation.md)
+
